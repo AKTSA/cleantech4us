@@ -1,28 +1,34 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu|Nunito:700|Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Audiowide);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 section{
 	text-align:center;
 }
 section:nth-child(1){
-	background:linear-gradient(black, purple);
+	//background:linear-gradient(black, purple);
+    background: #8e44ad;
 	color:white;
 }
 section:nth-child(2){
-	background:linear-gradient(white, #3498db);
+	//background:linear-gradient(white, #3498db);
+    background: #2980b9;
+    color:white;
 }
 section:nth-child(3){
-	background:linear-gradient(#8e44ad, #E066FF);
+	//background:linear-gradient(#8e44ad, #E066FF);
+    background: #9b59b6;
 }
 section:nth-child(3) h2{
 	color:white;
 }
 section:nth-child(4){
 	background:#E066FF;
+    color: white;
 }
 section:nth-child(5){
 	background:white;
@@ -34,7 +40,7 @@ article p{
 
 h1, h2, h3, h4, h5, h6{
 	font-family:sans-serif;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 h1{
 	font-size:900%;
@@ -49,10 +55,12 @@ table{
 }
 
 a{
-	color:rgb(0, 0, 238);
+	//color:rgb(0, 0, 238);
+    color: white;
 }
 a:visited{
-	color:rgb(0, 0, 238);
+	//color:rgb(0, 0, 238);
+    color: white; 
 }
 a:hover{
 	text-decoration:none;
@@ -68,8 +76,9 @@ a:hover{
 }
 .Grid6 td{
 	overflow:hidden;
+    border: 4px;
 	border-style:solid;
-	border-color:black;
+	border-color:#9b59b6;
 	background:white;
 	padding:0;
 	position:relative;
@@ -87,7 +96,7 @@ a:hover{
 .HoverScroll .Grid6 td div:hover{
 	/*transform:translateY(-30vh);*/
 	top:calc(-40vh + 10px);
-	background:black;
+	background:white;
 	color:white;
 }
 .HoverScroll .Grid6 h3{
