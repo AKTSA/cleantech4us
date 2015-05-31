@@ -12,11 +12,22 @@
         <script type="text/javascript" src="ScrollCode.js"></script>-->
 		<script src="/JSDep/skrollr.min.js"></script>
 		
+		
+		<!-- jQuery Plugin -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		
 		<meta name="description" content="Promoting Clean Usage and Disposal of Technology" />
 		<meta name="author" content="Michael Xing" />
 		<meta charset="UTF-8" />
 	</head>
 	<body id="Top">
+		
+		<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+		
+		
+		
 		
 		<div style="position:fixed;z-index:-50;width:100vw;height:100vh;margin:0;padding:0;" data-200="background:rgb(139, 195, 74);" data-500="background:rgb(41, 128, 185);" data-1000="background:rgb(41, 128, 185);" data-1500="background:rgb(155, 89, 182);" data-1800="background:rgb(155, 89, 182);" data-2300="background:rgb(192, 57, 43);" data-2800="background:rgb(192, 57, 43);" data-3200="background:rgb(44, 62, 80)"></div>
 		<div style="position:fixed;z-index:-49;overflow:hidden;margin:0;padding:0;background-size:cover;background-repeat:no-repeat;background-image:url('Images/bg2.svg');min-width:100vw;min-height:100vh;" data-0="top:0vh;opacity:1;" data-500="top:-10vh;opacity:0;">
@@ -155,7 +166,7 @@ Nearly 75% of electronic equipment can be recovered to create new products. Expe
 				<p>Created with the support of <a href="/AKCTE/">AK's CTE Department</a>.</p>
 				<p>Click <a onclick="OpenBib();" style="cursor:pointer;">here</a> for bibliography and references.</p>
 				<p>All graphics were created or photographed by AK TSA. To the best of our knowledge, no copyrighted material was used in the creation of this page.</p>
-				<p><a href="http://prinzhorn.github.io/skrollr/">Skrollr</a>, <a href="http://alvarotrigo.com/fullPage/">FullPage.js</a>, <a href="http://whichbrowser.net/">WhichBrowser</a>, and <a href="https://jquery.org/">JQuery</a> are used under the MIT License.</p>
+				<p><a href="http://prinzhorn.github.io/skrollr/">Skrollr</a>, <a href="http://alvarotrigo.com/fullPage/">FullPage.js</a>, <a href="http://whichbrowser.net/">WhichBrowser</a>, and <a href="https://jquery.org/">JQuery</a> are used under the MIT License. <a href="https://niklausgerber.com/blog/preloadme-a-lightweight-jquery-website-preloader/">PreLoadMe</a> is used under CC-BY 3.0.</p>
 			</div>
         </footer>
         
@@ -280,6 +291,16 @@ Pinto, Violet N. "E-waste Hazard: The Impending Challenge." Indian Journal of Oc
 					//'Oops, something went wrong:<br> <small>' + e + '</small>';
 				}
 			});
+			
+			
+			
+			//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+	//]]>
 	</script>
         
 	</body>

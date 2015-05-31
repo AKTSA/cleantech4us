@@ -44,6 +44,21 @@ section:nth-child(7){
 	color:white;
 }
 
+
+
+
+
+a{
+	color:white;
+}
+a:visited{
+	color:white;
+}
+a:hover{
+	text-decoration:none;
+}
+
+
 article p{
 	padding:0 80px;
 }
