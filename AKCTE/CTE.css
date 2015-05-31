@@ -209,11 +209,14 @@ a:hover{
 }
 #TeachDiv{
 	padding-left:20px;
+    padding-right:20px;
 	overflow-y:auto;
 	max-height:55vh;
+    max-width: 800px;
+    margin: auto;
+    
 }
 #TeachImg{
-	margin-left:20px;
 }
 
 .HoverScroll small{
