@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:700|Open+Sans|Roboto:300);
 
 body{
-	overflow-x:hidden;
 	padding:0;
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
@@ -75,4 +74,38 @@ table .RRow{
 img{
 	max-height:100%;
 	max-width:100%;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+@media (max-width: 600px), (max-height: 600px){
+  body{
+  	font-size:50%;
+  }
+  table th{
+  	padding:0;
+  }
+  table td{
+  	padding:0;
+  }
+}
+
+@media (max-width: 1300px) and (min-height: 400px){
+	#Assem{
+		bottom:0 !important;
+	}
+}
+@media screen and (max-aspect-ratio: 5/7){
+	#Crap{
+		top:20vh;
+	}
+	#Landfill{
+		transform:translateY(-3vh);
+	}
+}
+@media screen and (max-aspect-ratio: 5/10){
+	#Crap{
+		top:15vh;
+	}
 }

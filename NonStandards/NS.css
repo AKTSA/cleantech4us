@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300|Open+Sans|Audiowide);
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+section{
+	text-align:center;
+}
+section:nth-child(1){
+	background-image:url(/Images/bg.svg);
+	color:black;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+section:nth-child(2){
+	background:#2980b9;
+	color:white;
+}
+section:nth-child(3){
+	background-color:#9b59b6;
+}
+section:nth-child(3) h2{
+	color:white;
+}
+section:nth-child(4){
+	background:#2ecc71;
+}
+section:nth-child(4) h2{
+	color:white;
+}
+section:nth-child(5){/*
+	background-image:url(/Images/Seep.svg);
+	background-repeat:no-repeat;
+	background-size:cover;*/
+	background:#2980b9;
+}
+section:nth-child(6){
+	background:#8E44AD;
+	color:white;
+}
+section:nth-child(7){
+	background:black;
+	color:white;
+}
+
+article p{
+	padding:0 80px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	font-size:900%;
+}
+h2{
+	font-size:400%;
+}
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+
+
+.FixedH2{
+	position:absolute;
+	z-index:5;
+	width:50vw;
+	left:50%;
+	margin-left:-25vw;
+	text-align:center;
+	top:2vh;
+}
+.FixedH2 h2{
+	margin:0;
+	padding:0;
+}
+
+
+
+
+.Info{
+	position:absolute;
+	transition:all 1s ease;
+	z-index:5;
+	background:white;
+	width:100vw;
+	height:100vh;
+	background:#800080;
+	color:white;
+	top:0;
+}
+.HiddenInfo{
+	left:-100vw;
+}
+.ShowInfo{
+	opacity:1;
+	left:0;
+}
+.Info h1{
+	font-size:500%;
+}
+.Info button{
+	font-size:125%;
+	padding: 20px 50px;
+	background:black;
+	color:white;
+	cursor:pointer;
+	border-style:none;
+	transition:all 0.25s ease;
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.Info button:hover{
+	background:white;
+	color:black;
+}
+#TeachDiv{
+	padding-left:20px;
+	overflow-y:auto;
+	max-height:55vh;
+}
+#TeachImg{
+	margin-left:20px;
+}
+
+.HoverScroll small{
+	display:block;
+	position:absolute;
+	right:0;
+	bottom:0;
+	color:white;
+	background:rgba(0, 0, 0, 0.6);
+	padding:0 5px;
+}
+
+
+.ScrollDown{
+	font-style:italic;
+	position:absolute;
+	bottom:40px;
+	left:25vw;
+	text-align:center;
+	width:50vw;
+}

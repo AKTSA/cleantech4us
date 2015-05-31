@@ -78,7 +78,8 @@ a:hover{
 	position:relative;
 }
 .HoverScroll .Grid6 td div{
-	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
 	position:absolute;
 	overflow:hidden;
 	top:0;
@@ -111,7 +112,8 @@ a:hover{
 	margin:0;
 }
 .HoverZoom .Grid6 td .BImg{
-	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
 	position:absolute;
 	overflow:hidden;
 	top:0;
@@ -123,7 +125,9 @@ a:hover{
 	background-repeat:no-repeat;
 }
 .HoverZoom .Grid6 td .BImg:hover{
-	transform:scale(1.5);
+	-webkit-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	    transform:scale(1.5);
 	top:-12.5%;
 }
 .HoverZoom .Grid6 td .BImg img{
@@ -138,13 +142,18 @@ a:hover{
 	background:rgba(0, 0, 0, 0.4);
 	pointer-events: none;
 	top: 50%;
-	transform: translateY(-50%)scale(1.5);
+	-webkit-transform: translateY(-50%)scale(1.5);
+	-ms-transform: translateY(-50%)scale(1.5);
+	    transform: translateY(-50%)scale(1.5);
 	opacity:0;
-	transition: all 0.7s ease;
+	-webkit-transition: all 0.7s ease;
+	        transition: all 0.7s ease;
 }
 .HoverZoom .Grid6 td:hover .BText{
 	opacity:1;
-	transform:translateY(-50%)scale(1);
+	-webkit-transform:translateY(-50%)scale(1);
+	-ms-transform:translateY(-50%)scale(1);
+	    transform:translateY(-50%)scale(1);
 }
 
 .FixedH2{
@@ -166,7 +175,8 @@ a:hover{
 
 .Info{
 	position:absolute;
-	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+	        transition:all 1s ease;
 	z-index:5;
 	background:white;
 	width:100vw;
@@ -192,7 +202,8 @@ a:hover{
 	color:white;
 	cursor:pointer;
 	border-style:none;
-	transition:all 0.25s ease;
+	-webkit-transition:all 0.25s ease;
+	        transition:all 0.25s ease;
 	position:absolute;
 	bottom:0;
 	right:0;
