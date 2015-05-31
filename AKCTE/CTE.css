@@ -1,0 +1,228 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Nunito:700|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+section{
+	text-align:center;
+}
+section:nth-child(1){
+	background:linear-gradient(black, purple);
+	color:white;
+}
+section:nth-child(2){
+	background:linear-gradient(white, #3498db);
+}
+section:nth-child(3){
+	background:linear-gradient(#8e44ad, #E066FF);
+}
+section:nth-child(3) h2{
+	color:white;
+}
+section:nth-child(4){
+	background:#E066FF;
+}
+section:nth-child(5){
+	background:white;
+}
+
+article p{
+	padding:0 80px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:sans-serif;
+	font-family: 'Nunito', sans-serif;
+}
+h1{
+	font-size:900%;
+}
+h2{
+	font-size:400%;
+}
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a{
+	color:rgb(0, 0, 238);
+}
+a:visited{
+	color:rgb(0, 0, 238);
+}
+a:hover{
+	text-decoration:none;
+}
+
+
+
+.Grid6{
+	width:90vw;
+	height:80vh;
+	position:relative;
+	top:8vh;
+}
+.Grid6 td{
+	overflow:hidden;
+	border-style:solid;
+	border-color:black;
+	background:white;
+	padding:0;
+	position:relative;
+}
+.HoverScroll .Grid6 td div{
+	transition: all 0.5s ease;
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	margin:0 auto;
+	width:100%;
+	padding-bottom:23vh;
+	cursor:pointer;
+}
+.HoverScroll .Grid6 td div:hover{
+	/*transform:translateY(-30vh);*/
+	top:calc(-40vh + 10px);
+	background:black;
+	color:white;
+}
+.HoverScroll .Grid6 h3{
+	padding-top:19vh;
+	padding-bottom:19vh;
+	margin:0;
+}
+
+.HoverZoom .Grid6{
+	width:100%;
+	border-collapse:collapse;
+	height:100vh;
+	top:0;
+}
+.HoverZoom .Grid6 td{
+	border:0;
+	border-style:none;
+	margin:0;
+}
+.HoverZoom .Grid6 td .BImg{
+	transition: all 0.5s ease;
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	margin:0 auto;
+	width:100%;
+	cursor:auto;
+	height:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.HoverZoom .Grid6 td .BImg:hover{
+	transform:scale(1.5);
+	top:-12.5%;
+}
+.HoverZoom .Grid6 td .BImg img{
+	max-height:50vh;
+}
+.HoverZoom .Grid6 td .BText{
+	position:absolute;
+	z-index: 5;
+	width:75%;
+	left:12.5%;
+	color:white;
+	background:rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	top: 50%;
+	transform: translateY(-50%)scale(1.5);
+	opacity:0;
+	transition: all 0.7s ease;
+}
+.HoverZoom .Grid6 td:hover .BText{
+	opacity:1;
+	transform:translateY(-50%)scale(1);
+}
+
+.FixedH2{
+	position:absolute;
+	z-index:5;
+	width:50vw;
+	left:50%;
+	margin-left:-25vw;
+	text-align:center;
+	top:2vh;
+}
+.FixedH2 h2{
+	margin:0;
+	padding:0;
+}
+
+
+
+
+.Info{
+	position:absolute;
+	transition:all 1s ease;
+	z-index:5;
+	background:white;
+	width:100vw;
+	height:100vh;
+	background:#800080;
+	color:white;
+	top:0;
+}
+.HiddenInfo{
+	left:-100vw;
+}
+.ShowInfo{
+	opacity:1;
+	left:0;
+}
+.Info h1{
+	font-size:500%;
+}
+.Info button{
+	font-size:125%;
+	padding: 20px 50px;
+	background:black;
+	color:white;
+	cursor:pointer;
+	border-style:none;
+	transition:all 0.25s ease;
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.Info button:hover{
+	background:white;
+	color:black;
+}
+#TeachDiv{
+	padding-left:20px;
+	overflow-y:auto;
+	max-height:55vh;
+}
+#TeachImg{
+	margin-left:20px;
+}
+
+.HoverScroll small{
+	display:block;
+	position:absolute;
+	right:0;
+	bottom:0;
+	color:white;
+	background:rgba(0, 0, 0, 0.6);
+	padding:0 5px;
+}
+
+
+.ScrollDown{
+	font-style:italic;
+	position:absolute;
+	bottom:40px;
+	left:25vw;
+	text-align:center;
+	width:50vw;
+}
