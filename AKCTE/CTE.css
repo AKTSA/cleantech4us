@@ -1,38 +1,31 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu|Nunito:300|Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Audiowide);
-@import url(http://fonts.googleapis.com/css?family=Raleway:300);
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
-@import url(http://fonts.googleapis.com/css?family=Roboto:300);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://fonts.googleapis.com/css?family=Oxygen:300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300|Open+Sans|Audiowide);
 
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 section{
 	text-align:center;
 }
 section:nth-child(1){
-	//background:linear-gradient(black, purple);
-    background: #9b59b6;
+	background:#9b59b6;
 	color:white;
 }
 section:nth-child(2){
-	//background:linear-gradient(white, #3498db);
-    background: #2980b9;
-    color:white;
+	background:#2980b9;
+	color:white;
 }
 section:nth-child(3){
-	//background:linear-gradient(#8e44ad, #E066FF);
-    background: #9b59b6;
+	background:#9b59b6;
 }
 section:nth-child(3) h2{
 	color:white;
 }
 section:nth-child(4){
-	background:#E066FF;
-    color: white;
+	background:#2980b9;
+}
+section:nth-child(4) h2{
+	color:white;
 }
 section:nth-child(5){
 	background:white;
@@ -43,7 +36,6 @@ article p{
 }
 
 h1, h2, h3, h4, h5, h6{
-	//font-family:sans-serif;
 	font-family: 'Roboto', sans-serif;
 }
 h1{
@@ -59,12 +51,11 @@ table{
 }
 
 a{
-	//color:rgb(0, 0, 238);
-    color: white;
+	color:white;
+	text-decoration:underline;
 }
 a:visited{
-	//color:rgb(0, 0, 238);
-    color: white; 
+	color:white;
 }
 a:hover{
 	text-decoration:none;
@@ -80,9 +71,8 @@ a:hover{
 }
 .Grid6 td{
 	overflow:hidden;
-    border: 4px;
 	border-style:solid;
-	border-color:#9b59b6;
+	border-color:black;
 	background:white;
 	padding:0;
 	position:relative;
@@ -100,7 +90,7 @@ a:hover{
 .HoverScroll .Grid6 td div:hover{
 	/*transform:translateY(-30vh);*/
 	top:calc(-40vh + 10px);
-	background:white;
+	background:black;
 	color:white;
 }
 .HoverScroll .Grid6 h3{
@@ -213,14 +203,11 @@ a:hover{
 }
 #TeachDiv{
 	padding-left:20px;
-    padding-right:20px;
 	overflow-y:auto;
 	max-height:55vh;
-    max-width: 800px;
-    margin: auto;
-    
 }
 #TeachImg{
+	margin-left:20px;
 }
 
 .HoverScroll small{
