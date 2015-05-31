@@ -15,7 +15,7 @@ section{
 }
 section:nth-child(1){
 	//background:linear-gradient(black, purple);
-    background: #AA00FF;
+    background: #8e44ad;
 	color:white;
 }
 section:nth-child(2){
