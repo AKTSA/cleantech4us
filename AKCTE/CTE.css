@@ -2,12 +2,12 @@
 @import url(http://fonts.googleapis.com/css?family=Audiowide);
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
-@import url(http://fonts.googleapis.com/css?family=Marvel);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Oxygen:300);
 
 body{
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 section{
@@ -44,7 +44,7 @@ article p{
 
 h1, h2, h3, h4, h5, h6{
 	//font-family:sans-serif;
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 h1{
 	font-size:900%;
