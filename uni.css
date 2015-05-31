@@ -1,16 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:700|Open+Sans|Roboto:300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
 
 body{
 	overflow-x:hidden;
 	padding:0;
 	margin:0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 header{
 	width:80%;
 	text-align:center;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Comforta', sans-serif;
+    color: white;
 	position:fixed;
 	top:50%;
 	left:50%;
