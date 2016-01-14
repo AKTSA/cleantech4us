@@ -110,6 +110,7 @@ a:hover{
 	border:0;
 	border-style:none;
 	margin:0;
+	width:33%;
 }
 .HoverZoom .Grid6 td .BImg{
 	-webkit-transition: all 0.5s ease;
